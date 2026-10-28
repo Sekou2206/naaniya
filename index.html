@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NAANIYA, maison de couture de Madina</title>
+<meta name="description" content="NAANIYA, vêtements imaginés, dessinés et cousus par Madina. Collection Tombouctou, présentée à la Fashion Week de Paris.">
+<link rel="preload" href="assets/fonts/gloock-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/naaniya.css">
+</head>
+<body>
+
+<header class="barre" id="barre">
+  <a class="barre__marque" href="#haut">NAANIYA</a>
+  <nav class="barre__nav" aria-label="Navigation principale">
+    <a href="#collection">Collection</a>
+    <a href="#defile">Défilé</a>
+    <a href="#atelier">Atelier</a>
+    <a href="#madina">Madina</a>
+    <a href="#essayage">Essayage</a>
+  </nav>
+  <button class="barre__selection" type="button" data-ouvrir-selection aria-label="Ouvrir ma sélection">
+    Sélection <span class="pastille" data-compteur>0</span>
+  </button>
+</header>
+
+<main id="haut">
+
+  <section class="ouverture" aria-label="Collection Tombouctou">
+    <h1 class="ouverture__nom" aria-label="NAANIYA">
+      <span>N</span><span>A</span><span>A</span><span>N</span><span>I</span><span>Y</span><span>A</span>
+    </h1>
+    <figure class="ouverture__image">
+      <img src="assets/img/ig-14.jpg" alt="Silhouette de la collection Tombouctou devant un mur en banco sculpté, une calebasse posée sur la tête" fetchpriority="high">
+    </figure>
+    <div class="ouverture__texte">
+      <p class="ouverture__collection">Collection Tombouctou</p>
+      <p class="ouverture__phrase">Des vêtements imaginés, dessinés et cousus à la main par Madina, entre Paris et le Mali.</p>
+      <div class="ouverture__liens">
+        <a class="bouton bouton--plein" href="#collection">Voir les pièces</a>
+        <a class="bouton" href="#defile">Revoir le défilé</a>
+      </div>
+    </div>
+    <div class="etiquette etiquette--ouverture" aria-hidden="true">
+      <span class="etiquette__nom">NAANIYA</span>
+      <span class="etiquette__ligne">Paris</span>
+      <span class="etiquette__ligne">Cousu main</span>
+    </div>
+  </section>
+
+  <section class="manifeste" id="propos">
+    <div class="manifeste__texte">
+      <p class="manifeste__grand">Tombouctou fut une ville de savants. Ses manuscrits ont traversé les siècles parce que des familles les ont gardés, recopiés, transmis.</p>
+      <p>Cette collection part de là. Le bogolan du Mali y rencontre des fins de séries de tissus de grande qualité dénichées en France. Chaque pièce garde la trace de la main qui l’a coupée.</p>
+    </div>
+    <figure class="manifeste__tissu">
+      <img src="assets/img/bogolan-16.jpg" alt="Bogolan aux motifs triangulaires noirs sur fond brun" loading="lazy">
+    </figure>
+  </section>
+
+  <section class="defile" id="defile" aria-labelledby="titre-defile">
+    <div class="defile__tete">
+      <h2 id="titre-defile" class="titre">Le défilé</h2>
+      <p>Vingt passages, présentés à la Fashion Week de Paris en 2026. Faites glisser pour suivre l’ordre de sortie.</p>
+      <div class="defile__fleches">
+        <button type="button" class="fleche" data-defile="-1" aria-label="Passages précédents"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" class="fleche" data-defile="1" aria-label="Passages suivants"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <ol class="defile__piste" data-piste tabindex="0" aria-label="Passages du défilé Tombouctou"></ol>
+  </section>
+
+  <section class="boutique" id="collection" aria-labelledby="titre-collection">
+    <div class="boutique__tete">
+      <h2 id="titre-collection" class="titre">La collection</h2>
+      <p>Chaque pièce est coupée et cousue en petite série. Le prix et le délai de fabrication vous sont communiqués avec votre demande.</p>
+    </div>
+    <div class="filtres" role="group" aria-label="Filtrer les pièces" data-filtres></div>
+    <ul class="grille" data-grille></ul>
+  </section>
+
+  <section class="atelier" id="atelier" aria-labelledby="titre-atelier">
+    <div class="atelier__texte">
+      <h2 id="titre-atelier" class="titre">L’atelier</h2>
+      <p class="atelier__intro">Rien n’est confié à une usine. Une collection commence dans un carnet et finit sous les projecteurs.</p>
+      <dl class="etapes">
+        <div><dt>Le carnet</dt><dd>Les mots d’abord : savoir, voyage, transmission. Puis les croquis, page après page.</dd></div>
+        <div><dt>Le tissu</dt><dd>Bogolan teint à la terre, bazin, toiles et cuirs choisis un par un chez les marchands.</dd></div>
+        <div><dt>La coupe</dt><dd>Patronage, essais, retouches. Chaque pièce passe entre les mêmes mains du début à la fin.</dd></div>
+        <div><dt>La scène</dt><dd>Paris, Bamako, Nairobi. Le vêtement rencontre enfin le corps qui le porte.</dd></div>
+      </dl>
+    </div>
+    <div class="atelier__planche">
+      <figure class="planche planche--a"><img src="assets/img/atelier-16.jpg" alt="Carnet de notes manuscrites de la collection Tombouctou" loading="lazy"></figure>
+      <figure class="planche planche--b"><img src="assets/img/atelier-12.jpg" alt="Échantillons de tissus beiges, kaki et rouille posés sur une table" loading="lazy"></figure>
+      <figure class="planche planche--c"><img src="assets/img/atelier-10.jpg" alt="Croquis au crayon d’une silhouette" loading="lazy"></figure>
+      <figure class="planche planche--d"><img src="assets/img/bogolan-14.jpg" alt="Bogolan indigo suspendu au soleil" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="scenes" aria-labelledby="titre-scenes">
+    <h2 id="titre-scenes" class="titre">Sur scène</h2>
+    <div class="scenes__liste">
+      <article class="scene">
+        <img src="assets/img/pfw26-13.jpg" alt="Madina avance sur le podium à Paris" loading="lazy">
+        <h3>Paris</h3>
+        <p>Fashion Week 2026. La collection Tombouctou, du croquis au podium.</p>
+      </article>
+      <article class="scene">
+        <img src="assets/img/bamako-01.jpg" alt="Tenue sable sur le tapis rouge de la Bamako Fashion Week" loading="lazy">
+        <h3>Bamako</h3>
+        <p>Invitée à la Bamako Fashion Week pour présenter Tombouctou, quelques années après un premier défilé hautement symbolique au Mali.</p>
+      </article>
+      <article class="scene">
+        <img src="assets/img/ig-31.jpg" alt="Madina à Nairobi" loading="lazy">
+        <h3>Nairobi</h3>
+        <p>Une fille d’Afrique de l’Ouest à l’Est du continent : le shooting de la collection et la Nairobi Fashion Week.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="madina" id="madina" aria-labelledby="titre-madina">
+    <figure class="madina__portrait">
+      <img src="assets/img/ig-21.jpg" alt="Madina, souriante, entourée de rouleaux de tissus" loading="lazy">
+    </figure>
+    <div class="madina__texte">
+      <h2 id="titre-madina" class="titre">Madina</h2>
+      <p class="madina__grand">J’imagine, je dessine, je crée et je couds depuis 2016.</p>
+      <p>Styliste d’origine malienne, Madina a fondé NAANIYA pour raconter l’héritage textile du Mali avec les codes d’aujourd’hui. Ses collections portent des noms de retours et de routes : Le Retour, montrée à Bamako, FAMa, puis Tombouctou.</p>
+      <p>Elle prend la parole sur la mode pudique, les métiers d’art et les nouvelles routes créatives entre l’Afrique et ses diasporas. Et elle répond elle même à vos messages.</p>
+      <a class="lien" href="https://www.instagram.com/lafrofrenchie/" target="_blank" rel="noopener">Suivre Madina sur Instagram</a>
+    </div>
+  </section>
+
+  <section class="essayage" id="essayage" aria-labelledby="titre-essayage">
+    <div class="etiquette etiquette--grande">
+      <h2 id="titre-essayage" class="essayage__titre">Une pièce vous attend</h2>
+      <p>Ajoutez vos pièces à la sélection, puis envoyez votre demande. Madina vous répond avec les tailles, le prix et le délai. Les essayages se font à Paris, sur rendez vous.</p>
+      <div class="essayage__liens">
+        <button type="button" class="bouton bouton--plein" data-ouvrir-selection>Voir ma sélection</button>
+        <a class="bouton" href="https://ig.me/m/naaniya__" target="_blank" rel="noopener">Écrire à la maison</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <p class="pied__marque">NAANIYA</p>
+  <div class="pied__colonnes">
+    <p>Maison fondée par Madina<br>Paris et Bamako</p>
+    <p><a href="https://www.instagram.com/naaniya__/" target="_blank" rel="noopener">@naaniya__</a><br><a href="https://www.instagram.com/lafrofrenchie/" target="_blank" rel="noopener">@lafrofrenchie</a></p>
+    <p>Collections<br>Le Retour, FAMa, Tombouctou</p>
+  </div>
+</footer>
+
+<div class="voile" data-voile hidden></div>
+
+<aside class="fiche" data-fiche role="dialog" aria-modal="true" aria-labelledby="fiche-nom" hidden>
+  <button class="fermer" type="button" data-fermer aria-label="Fermer la fiche"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <div class="fiche__images" data-fiche-images></div>
+  <div class="fiche__corps">
+    <p class="fiche__famille" data-fiche-famille></p>
+    <h2 class="fiche__nom" id="fiche-nom" data-fiche-nom></h2>
+    <p class="fiche__statut" data-fiche-statut></p>
+    <p class="fiche__texte" data-fiche-texte></p>
+    <p class="fiche__matiere" data-fiche-matiere></p>
+    <fieldset class="tailles">
+      <legend>Taille</legend>
+      <div data-fiche-tailles></div>
+    </fieldset>
+    <button type="button" class="bouton bouton--plein bouton--large" data-ajouter>Ajouter à ma sélection</button>
+    <p class="fiche__note">Prix sur demande, communiqué avec le délai de fabrication.</p>
+  </div>
+</aside>
+
+<aside class="selection" data-selection role="dialog" aria-modal="true" aria-labelledby="selection-titre" hidden>
+  <div class="selection__tete">
+    <h2 id="selection-titre">Ma sélection</h2>
+    <button class="fermer" type="button" data-fermer aria-label="Fermer la sélection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  </div>
+  <ul class="selection__liste" data-selection-liste></ul>
+  <p class="selection__vide" data-selection-vide>Votre sélection est vide. Ouvrez une pièce de la collection pour l’ajouter ici.</p>
+  <div class="selection__pied" data-selection-pied>
+    <button type="button" class="bouton bouton--plein bouton--large" data-envoyer>Envoyer ma demande</button>
+    <p class="selection__note" data-envoi-note>Votre liste est copiée, puis la messagerie Instagram de la maison s’ouvre. Il ne reste qu’à la coller.</p>
+  </div>
+</aside>
+
+<p class="annonce" data-annonce role="status" aria-live="polite"></p>
+
+<script src="assets/js/pieces.js"></script>
+<script src="assets/js/naaniya.js"></script>
+</body>
+</html>
